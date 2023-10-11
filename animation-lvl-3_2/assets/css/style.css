@@ -1,0 +1,69 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+}
+
+main {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+
+div {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background-color: white;
+    animation-name: bounce;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+div:nth-of-type(1) {
+    left: 42%;
+    top: 50%;
+    
+}
+
+div:nth-of-type(2) {
+    left: 46%;
+    top: 50%;
+    animation-delay: 0.1s;
+}
+
+div:nth-of-type(3) {
+    left: 50%;
+    top: 50%;
+    animation-delay: 0.2s;
+
+}
+
+div:nth-of-type(4) {
+    left: 54%;
+    top: 50%;
+    animation-delay: 0.3s;
+
+}
+
+div:nth-of-type(5) {
+    left: 58%;
+    top: 50%;
+    animation-delay: 0.4s;
+
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-50px);
+    }
+}

@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: flex;
+    gap: 50px;
+    margin: 40px;
+    justify-content: center;
+    
+}
+
+div {
+    background-color: green;
+    color: white;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    padding-block: 55px;
+    font-size: 1.5rem;
+    transition: all 2s;
+}
+
+.translate:hover {
+    transform: translate(30%);
+}
+
+.translateX:hover {
+    transform: translate(-30%,0);
+}
+
+.translateY:hover {
+    transform: translate(0,30%);
+}
+
+.rotate:hover {
+    transform: rotate(360deg);
+}
+
+.scale:hover {
+    transform: scale(1.5);
+}
+
+.skew:hover {
+    transform: skew(10deg, 10deg);
+}

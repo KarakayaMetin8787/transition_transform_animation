@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.grey {
+    width: 100vw;
+    height: 300px;
+    background-color: grey;
+    position: relative;
+}
+
+.red {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    transition: 2s linear;
+    position: absolute;
+    left: 0;
+}
+
+.green {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    transition: 1s linear 1s;
+    position: absolute;
+    left: 0;
+    top:100px;
+}
+
+.grey:hover .red{
+    left: 90%;
+}
+
+
+.grey:hover .green{
+    left: 90%;
+}
